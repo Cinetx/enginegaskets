@@ -1,0 +1,128 @@
+.aside-menu {
+    width: 200px;
+    height: 200px;
+    padding-top: 20px;
+    
+    font-size: 1.2rem;
+}
+.search-bar__label {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.aside-menu__chekbox__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 20px;
+    div {
+        margin: 5px;
+    }
+}
+
+// скрываем стандартный чекбокс
+.aside__chekbox {
+    display: none;
+  }
+  
+  // добовляем место под рамку
+  
+  .aside__label{
+      display: inline-block;
+      position: relative;
+      padding-left: 30px;
+      line-height: 20px;
+      cursor: pointer;
+  }
+  
+  // добовляем рамку
+  .aside__label:before {
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: -3px;
+      width: 25px;
+      height: 25px;
+      border: 2px solid #e5e5e5;
+    //   background-color: #ffffff;
+      border-radius: 2px;
+  }
+  .aside__label:hover:before {
+    border: 2px solid black;
+  transition: 0.9s;
+  }
+  .aside__label:active:before {
+    border: 2px solid #d63c66;
+  transition: 0.1s;
+  }
+  
+  
+  // добавляем анимацию
+  .aside__label:after {
+      content: "";
+      position: absolute;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+  
+  }
+  
+  // добавляем галку
+  .aside__label:after {
+      left: 5px;
+      top: 3px;
+      width: 15px;
+      height: 8px;
+      border-radius: 1px;
+      border-left: 3px solid #d4345f;
+      border-bottom: 3px solid #d4345f;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+  }
+  
+  // прячем галку
+  .aside__chekbox:not(:checked) + .aside__label:after {
+      opacity: 0;
+  }
+  // показываем галку
+  .aside__chekbox:checked + .aside__label:after  {
+      opacity: 1;
+  }
+
+  @media (max-width: 1200px){
+    .aside-menu {
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+        
+        font-size: 1.2rem;
+        // border: 2px solid red;
+
+        display: flex;
+        flex-direction: column;
+    }
+    .search {
+        margin: 0 auto;
+    }
+    .search-bar__label {
+        text-align: center;
+        font-weight: 700;
+    }
+    .search-bar {
+        width: 300px;
+    }
+    
+    .aside-menu__chekbox__wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        padding: 20px;
+        // border: 2px solid red;
+    }
+}
