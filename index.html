@@ -27,71 +27,99 @@
           <label class="search-bar__label" for="search-bar">Поиск по названию:</label>
           <input class="search-bar" type="text" id="search-bar">
         </div>
-        <!-- Мотоцикл, мотороллер, мопед, мотоблок, бензопила, снегоход, бензокоса.
-        Прокаладки, колпочки  -->
         <div>
-        <div class="aside-menu__chekbox__wrapper">
+        <div class="aside-menu__checkbox__wrapper">
           <div>
-            <input class="aside__chekbox" type="checkbox" name="" id="aside__chekbox--1">
-            <label class="aside__label" for="aside__chekbox--1">Мотоцикл</label>
+            <input class="aside__checkbox aside__checkbox--motorcycle" value="motorcycle" type="checkbox" name="" id="aside__checkbox--motorcycle">
+            <label class="aside__label aside__label--motorcycle" for="aside__checkbox--motorcycle">Мотоцикл</label>
           </div>
           <div>
-            <input class="aside__chekbox" type="checkbox" name="" id="aside__chekbox--2">
-            <label class="aside__label" for="aside__chekbox--2">Мотороллер</label>
+            <input class="aside__checkbox aside__checkbox--scooter" value="scooter" type="checkbox" name="" id="aside__checkbox--scooter">
+            <label class="aside__label" for="aside__checkbox--scooter">Мотороллер</label>
           </div>
           <div>
-            <input class="aside__chekbox" type="checkbox" name="" id="aside__chekbox--3">
-            <label class="aside__label" for="aside__chekbox--3">Мопед</label>
+            <input class="aside__checkbox aside__checkbox--moped" value="moped" type="checkbox" name="" id="aside__checkbox--moped">
+            <label class="aside__label" for="aside__checkbox--moped">Мопед</label>
           </div>
           <div>
-            <input class="aside__chekbox" type="checkbox" name="" id="aside__chekbox--4">
-            <label class="aside__label" for="aside__chekbox--4">Мотоблок</label>
+            <input class="aside__checkbox aside__checkbox--walk-behind-tractor" type="checkbox" name="" id="aside__checkbox--walk-behind-tractor">
+            <label class="aside__label" for="aside__checkbox--walk-behind-tractor">Мотоблок</label>
           </div>
           <div>
-            <input class="aside__chekbox" type="checkbox" name="" id="aside__chekbox--5">
-            <label class="aside__label" for="aside__chekbox--5">Бензопила</label>
+            <input class="aside__checkbox aside__checkbox--chainsaw" type="checkbox" name="" id="aside__checkbox--chainsaw">
+            <label class="aside__label" for="aside__checkbox--chainsaw">Бензопила</label>
           </div>
           <div>
-            <input class="aside__chekbox" type="checkbox" name="" id="aside__chekbox--6">
-            <label class="aside__label" for="aside__chekbox--6">Бензокоса</label>
+            <input class="aside__checkbox aside__checkbox--brushcutter" type="checkbox" name="" id="aside__checkbox--brushcutter">
+            <label class="aside__label" for="aside__checkbox--brushcutter">Бензокоса</label>
           </div>
           <div>
-            <input class="aside__chekbox" type="checkbox" name="" id="aside__chekbox--7">
-            <label class="aside__label" for="aside__chekbox--7">Снегоход</label>
+            <input class="aside__checkbox aside__checkbox--snowmobile" type="checkbox" name="" id="aside__checkbox--snowmobile">
+            <label class="aside__label" for="aside__checkbox--snowmobile">Снегоход</label>
           </div>
           
         </div>
-        <div class="aside-menu__chekbox__wrapper">
+        <div class="aside-menu__checkbox__wrapper">
           <div>
-            <input class="aside__chekbox" type="checkbox" name="" id="aside__chekbox--8">
-            <label class="aside__label" for="aside__chekbox--8">Прокладки</label>
+            <input class="aside__checkbox aside__checkbox--gaskets" type="checkbox" name="" id="aside__checkbox--gaskets">
+            <label class="aside__label" for="aside__checkbox--gaskets">Прокладки</label>
           </div>
           <div>
-            <input class="aside__chekbox" type="checkbox" name="" id="aside__chekbox--9">
-            <label class="aside__label" for="aside__chekbox--9">Колпочки</label>
+            <input class="aside__checkbox aside__checkbox--caps" type="checkbox" name="" id="aside__checkbox--caps">
+            <label class="aside__label" for="aside__checkbox--caps">Колпочки</label>
           </div>
         </div>
           
         </div>
       </aside>
       <section class="catalog">
-        <div class="catalog__wrapper">
-          <img class="catalog__img" src="./images/IMG_9173.JPG" alt="">
+        <div class="catalog__wrapper catalog__motorcycle catalog__show catalog__vissible" data-type="motorcycle">
+          <div class="catalog__img"alt=""></div>
           <div class="catalog__content">
-            <h4 class="catalog__content__name">Втулка шатуна</h4>
+            <h4 class="catalog__content__name">Втулка шатуна1</h4>
             <p>Цена оптовая:</p>
             <p class="catalog__content__price">30 рублей</p>
           </div>
         </div>
-        <div class="catalog__wrapper">
-          <img class="catalog__img" src="./images/IMG_9173.JPG" alt="">
+        <div class="catalog__wrapper catalog__show catalog__vissible" data-type="moped">
+          <div class="catalog__img"alt=""></div>
           <div class="catalog__content">
-            <h4 class="catalog__content__name">Ебулка тунаша</h4>
+            <h4 class="catalog__content__name">Втулка шатуна2</h4>
             <p>Цена оптовая:</p>
             <p class="catalog__content__price">30 рублей</p>
           </div>
         </div>
-        <div class="catalog__wrapper">
+       
+        
+        <div class="catalog__wrapper catalog__scooter catalog__show catalog__vissible" data-type="scooter">
+          <img class="catalog__img" src="./images/IMG_9173.JPG" alt="">
+          <div class="catalog__content">
+            <h4 class="catalog__content__name">Ебулка тунаша1</h4>
+            <p>Цена оптовая:</p>
+            <p class="catalog__content__price">30 рублей</p>
+          </div>
+        </div>
+
+        <div class="catalog__wrapper catalog__motorcycle catalog__show catalog__vissible" data-type="motorcycle">
+          <div class="catalog__img"alt=""></div>
+          <div class="catalog__content">
+            <h4 class="catalog__content__name">Втулка шатуна3</h4>
+            <p>Цена оптовая:</p>
+            <p class="catalog__content__price">30 рублей</p>
+          </div>
+        </div>
+        
+         <div class="catalog__wrapper catalog__scooter catalog__show catalog__vissible" data-type="scooter">
+          <img class="catalog__img" src="./images/IMG_9173.JPG" alt="">
+          <div class="catalog__content">
+            <h4 class="catalog__content__name">Ебулка тунаша2</h4>
+            <p>Цена оптовая:</p>
+            <p class="catalog__content__price">30 рублей</p>
+          </div>
+        </div>
+        
+  
+        <!-- <div class="catalog__wrapper catalog__motorcycle catalog__show">
           <img class="catalog__img" src="./images/IMG_9173.JPG" alt="">
           <div class="catalog__content">
             <h4 class="catalog__content__name">Хуюлка патуна</h4>
@@ -99,7 +127,15 @@
             <p class="catalog__content__price">30 рублей</p>
           </div>
         </div>
-        <div class="catalog__wrapper">
+        <div class="catalog__wrapper catalog__motorcycle catalog__show">
+          <img class="catalog__img" src="./images/IMG_9173.JPG" alt="">
+          <div class="catalog__content">
+            <h4 class="catalog__content__name">Втулка шатуна</h4>
+            <p>Цена оптовая:</p>
+            <p class="catalog__content__price">30 рублей</p>
+          </div>
+        </div>
+        <div class="catalog__wrapper catalog__show">
           <img class="catalog__img" src="./images/IMG_9173.JPG" alt="">
           <div class="catalog__content">
             <h4 class="catalog__content__name">паюлка шатуна</h4>
@@ -107,7 +143,7 @@
             <p class="catalog__content__price">30 рублей</p>
           </div>
         </div>
-        <div class="catalog__wrapper">
+        <div class="catalog__wrapper catalog__show">
           <img class="catalog__img" src="./images/IMG_9173.JPG" alt="">
           <div class="catalog__content">
             <h4 class="catalog__content__name">Втулка шатуна</h4>
@@ -115,14 +151,14 @@
             <p class="catalog__content__price">30 рублей</p>
           </div>
         </div>
-        <div class="catalog__wrapper">
+        <div class="catalog__wrapper catalog__show">
           <img class="catalog__img" src="./images/IMG_9173.JPG" alt="">
           <div class="catalog__content">
             <h4 class="catalog__content__name">Втулка шатуна</h4>
             <p>Цена оптовая:</p>
             <p class="catalog__content__price">30 рублей</p>
           </div>
-        </div>
+        </div> -->
       </section>
     </main>
     <section class="modal__contact">
@@ -130,10 +166,10 @@
       <form class="modal__contact__form">
         
           <div class="modal__contact__form__input-wrapper modal__contact__form__name">
-          <input class="modal__contact__form__input" type="text" placeholder="Имя">
+          <input class="modal__contact__form__input" type="text" placeholder="Имя" required>
           </div>
           <div class="modal__contact__form__input-wrapper modal__contact__form__phone">
-            <input  class="modal__contact__form__input" type="text" placeholder="Номер телефона">
+            <input  class="modal__contact__form__input" type="text" placeholder="Номер телефона" required>
           </div>
           <div class="modal__contact__form__input-wrapper modal__contact__form__phone">
             <input  class="modal__contact__form__input" type="text" placeholder="E-mail">
@@ -141,11 +177,15 @@
         
         <textarea class="modal__contact__form__text" placeholder="ТЕКСТ ДЛЯ ПРИМЕРА"></textarea>
         <input class="modal__contact__form__button" type="submit" value="Записаться">  
+        <button class="modal-close" type="button">Закрыть</button>
       </form>
       
-      <button class="modal-close" type="button">Закрыть</button>
+      
   </section>
+
+  
 </body>
 <script type="text/javascript" src="./js/live-search.js"></script>
 <script type="text/javascript" src="./js/modal__contact.js"></script>
+<script type="text/javascript" src="./js/chekbox.js"></script>
 </html>
