@@ -246,13 +246,8 @@ select {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  align-items: flex-start; }
-
-.catalog__hidden {
-  display: none; }
-
-.catalog__vissible {
-  display: block; }
+  align-items: flex-start;
+  min-height: 600px; }
 
 .catalog__wrapper {
   width: 250px;
@@ -260,7 +255,6 @@ select {
   margin: 20px;
   display: flex;
   flex-direction: column;
-  align-self: stretch;
   cursor: pointer;
   border: 2px solid rgba(200, 200, 200, 0.3);
   transition: 0.3s; }
@@ -289,6 +283,12 @@ select {
 @media (min-width: 1200px) {
   .catalog {
     width: 1000px; } }
+
+.catalog__hidden {
+  display: none; }
+
+.catalog__vissible {
+  display: block; }
 
 .aside-menu {
   width: 200px;
