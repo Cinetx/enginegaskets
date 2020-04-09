@@ -246,8 +246,7 @@ select {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  align-items: flex-start;
-  min-height: 600px; }
+  align-items: flex-start; }
 
 .catalog__hidden {
   display: none; }
@@ -259,6 +258,9 @@ select {
   width: 250px;
   padding: 20px;
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
   cursor: pointer;
   border: 2px solid rgba(200, 200, 200, 0.3);
   transition: 0.3s; }
@@ -281,7 +283,8 @@ select {
   margin-top: 10px; }
   .catalog__content__name {
     text-align: center;
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 10px; }
 
 @media (min-width: 1200px) {
   .catalog {
